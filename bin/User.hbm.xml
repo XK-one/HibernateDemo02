@@ -1,0 +1,14 @@
+<?xml version="1.0"?>  
+<!DOCTYPE hibernate-mapping PUBLIC   
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+    <hibernate-mapping>  
+      
+        <class name="com.wyk.sh.entity.User"  table="t_user">  
+        	<!-- <cache usage="read-write"/> -->		<!-- 该实体使用二级缓存,或者可以在hibernate.cfg.xml中配置 -->
+            <id name="id">  
+                <generator class="native" />  
+            </id>  
+            <property name="name"/>   
+        </class>  
+	</hibernate-mapping>  
